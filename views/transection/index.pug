@@ -1,0 +1,21 @@
+style
+    include ../../style/home.css
+
+h3 Lịch sử ác lần giao dịch
+table(class="table")
+  tr
+    th Stt
+    th Khách hàng
+    th Sách
+    td
+  each item in collectionTransection
+    tr
+      td= item.stt
+      td= item.name
+      td= item.title
+      td
+        a(href="/transection/delete/" + item.id) &#x2718; Xóa
+div     
+  a(href="/transection/create") Thêm giao dịch  &#10548;
+div
+  a(href="/") &#11013; Quay lại

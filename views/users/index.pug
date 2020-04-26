@@ -1,0 +1,16 @@
+style
+  include ../../style/home.css
+
+h3 Danh sách khách hàng
+ul 
+  each user in users
+    li(style="margin:0 0 10px") 
+      div
+        div= user.stt + ': ' + user.name
+      div
+        a(href="users/delete/" + user.id) &#x2718; xóa
+        a(href="users/update/" + user.id) &#8634; sửa
+div
+  a(href="/users/post") Thêm khách hàng &#10548;
+div
+  a(href="/") &#11013; Quay lại

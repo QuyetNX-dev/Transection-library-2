@@ -1,0 +1,10 @@
+a {
+  text-decoration: none;
+  padding-right: 10px;
+  color: rgb(26, 25, 25);
+}
+.table tr th,
+td {
+  border-bottom: solid 1px gray;
+  padding: 4px 10px;
+}

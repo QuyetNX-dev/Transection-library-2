@@ -1,0 +1,17 @@
+h3 Tạo giao dịch
+div(style="margin-top: -16px;margin-bottom: 15px;")
+  a(href="/transection") &#11013; Quay lại
+form(action="/transection/create" method="POST")
+  div(style="display: flex")
+    div(style="margin-rigth: 10px; padding-right: 10px; margin-bottom:10px") Khác hàng:
+      div(style="margin-top:10px")
+        select(name="userId")
+          each user in users
+            option(value= user.id)= user.name
+    div Thuê sách:
+      div(style="margin-top:10px")
+        select(name="bookId")
+          each book in books
+            option(value= book.id)= book.title
+  div
+   button Tạo mới
